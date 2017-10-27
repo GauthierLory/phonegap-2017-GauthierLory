@@ -1,13 +1,15 @@
-var CadeauVue = function (cadeau)
+var CadeauVue = function(cadeau)
 {
-    this.afficher = function (cadeau)
-    {
-        var pageListeCadeau = $("#page-cadeau").html();
+	this.afficher = function()
+	{
+		//var pageCadeau = $("#page-cadeau").html();
 
-        $("body").html(pageCadeau);
+		$("body").html(CadeauVue.pageCadeau);
 
-        $("#cadeau-nom").html(cadeau.nom);
-        $("#cadeau-marque").html(cadeau.marque);
-        $("#cadeau-description").html(cadeau.description);
-    }
+		$("#cadeau-nom").html(cadeau.nom);
+		$("#cadeau-marque").html(cadeau.marque);
+		$("#cadeau-description").html(cadeau.description);
+	}
 }
+
+CadeauVue.pageCadeau = $("#page-cadeau").html();

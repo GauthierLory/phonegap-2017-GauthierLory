@@ -1,23 +1,27 @@
 var ListeCadeauVue = function()
 {
-    this.afficher = function()
-    {
-        var pageListeCadeau = $("#page-liste-cadeau").html();
+	this.afficher = function()
+	{
 
-        $("body").html(pageListeCadeau);
+		//var pageListeCadeau = $("#page-liste-cadeau").html();
 
-        var htmlListeCadeau = $("#liste-cadeau");
+		$("body").html(ListeCadeauVue.pageListeCadeau);
 
-        var li = "";
+		var htmlListeCadeau = $("#liste-cadeau");
 
-        var cadeauDAO = new CadeauDAO();
+		var li = "";
 
-        var listeCadeau = cadeauDAO.getListeCadeau();
+		var cadeauDAO = new CadeauDAO();
 
-        for (var indiceCadeau in listeCadeau)
-        {
-            li += '<li><a href = "#cadeau/'+ indiceCadeau +'">'+ listeCadeau[indiceCadeau].nom + '</a></li>';
-        }
-        htmlListeCadeau.html(li);
-    }
+		var listeCadeau = cadeauDAO.getListeCadeau();
+
+		for (var indiceCadeau in listeCadeau)
+		{
+		    li += '<li><a href = "#cadeau/'+listeCadeau[indiceCadeau].id+'">'+ listeCadeau[indiceCadeau].nom+ '</a></li>';
+		    // +listeCadeau[indiceCadeau].marque+ " " +listeCadeau[indiceCadeau].description+"</li>";
+		}
+		htmlListeCadeau.html(li);
+	}
 }
+
+ListeCadeauVue.pageListeCadeau = $("#page-liste-cadeau").html();

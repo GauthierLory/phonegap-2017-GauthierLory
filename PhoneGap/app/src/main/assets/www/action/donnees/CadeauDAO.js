@@ -12,6 +12,12 @@ var CadeauDAO = function()
 
     this.getCadeauParId = function (id)
     {
+    	//for (var cadeau in listeCadeau)
+    	//{
+    //		if(cadeau.id == id) return cadeau;
+    //	}
+
+
 		for (var indiceCadeau in listeCadeau)
 		{
 		    cadeau = listeCadeau[indiceCadeau];
