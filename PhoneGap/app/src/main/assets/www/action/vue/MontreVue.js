@@ -7,7 +7,9 @@ var MontreVue = function(montre)
 		$("#montre-nom").html(montre.nom);
 		$("#montre-marque").html(montre.marque);
 		$("#montre-description").html(montre.description);
-		$("#montre-mecanisme").html(montre.mecanisme);
+		$("#montre-taille").html(montre.taille);
+		$("#montre-reference").html(montre.reference);
+		$("#montre-prix").html(montre.prix);
 	}
 }
 
