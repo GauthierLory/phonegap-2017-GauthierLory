@@ -6,7 +6,7 @@ var AjouterMontreVue = function()
    {
        this.cadeau = null;
 
-       $('#body').html(AjouterMontreVue.pageAjouterCadeau);
+       $('#body').html(AjouterMontreVue.pageAjouterMontre);
 
        $("#formulaire-ajouter").on("submit", function(evenement) 
        	{
@@ -17,6 +17,12 @@ var AjouterMontreVue = function()
        		var nom = $("#taille").val();
        		var nom = $("#reference").val();
        		var nom = $("#prix").val();
-       	} )
+
+       		instance.cadeau = new Montre(nom ,marque, description,taille,reference,prix)
+       		window.location.hash = "#AjouterMontreVue:NouvelleMontre";
+       	} );
+
    }
 }
+
+AjouterMontreVue.pageAjouterMontre = $("#page-ajouter-montre").html();

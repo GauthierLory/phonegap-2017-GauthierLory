@@ -15,6 +15,24 @@ var MontreDAO = function()
         return listeMontre;
     }
 
+    this.trouverNouvelId = function()
+    {
+        maximum = 0;
+        for (var indiceMontre in listeMontre)
+        {   
+            montre = listeMontre[indiceMontre]
+            for (montre.id > maximum)
+                maximum= montre.id;
+        }
+        return maximum + 1;
+    }
+
+    this.ajouterMontre = function()
+    {
+        montre.id = trouverNouvelId();
+        listeMontre.push(montre);
+    }
+
     this.getMontreParId = function (id)
     {
 		for (var indiceMontre in listeMontre)

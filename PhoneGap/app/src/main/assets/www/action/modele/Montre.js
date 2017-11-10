@@ -1,4 +1,4 @@
-var Montre = = function (nom, marque, prix, description, id=undefined)
+var Montre = function (nom, marque, prix, description, id=undefined)
 {
     this.id = id;
     this.nom = nom;
