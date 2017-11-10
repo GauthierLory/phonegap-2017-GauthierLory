@@ -1,10 +1,10 @@
 var AjouterMontreVue = function()
 {
    instance = this;
-   this.cadeau = null;
+   this.montre = null;
    this.afficher = function()
    {
-       this.cadeau = null;
+       this.montre = null;
 
        $('#body').html(AjouterMontreVue.pageAjouterMontre);
 
@@ -18,7 +18,7 @@ var AjouterMontreVue = function()
        		var nom = $("#reference").val();
        		var nom = $("#prix").val();
 
-       		instance.cadeau = new Montre(nom ,marque, description,taille,reference,prix)
+       		instance.montre = new Montre(nom ,marque, description,taille,reference,prix)
        		window.location.hash = "#AjouterMontreVue:NouvelleMontre";
        	} );
 

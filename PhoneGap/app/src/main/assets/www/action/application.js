@@ -1,8 +1,8 @@
 var applicationListeCollection =
 {
-    montreDAO : new MontreDAO(),
-    ajouterMontreVue : new AjouterMontreVue(),
-    lancer : function()
+    montreDAO: new MontreDAO(),
+    ajouterMontreVue: new AjouterMontreVue(),
+    lancer: function ()
     {
 	    $(window).on('hashchange',$.proxy(this.naviguer,this));
 	        this.naviguer();
@@ -11,6 +11,7 @@ var applicationListeCollection =
     naviguer : function()
     {
         var ancre = window.location.hash;
+
         if(!ancre)
         {
             var listeMontre = this.montreDAO.getListeMontre();
@@ -30,7 +31,6 @@ var applicationListeCollection =
             this.cadeauDAO.ajouterMontre(montre);
             window.location.hash = "#";
         }
-
 
         else
         {
