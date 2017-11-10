@@ -16,7 +16,6 @@ var ListeMontreVue = function()
 		for (var indiceMontre in listeMontre)
 		{
 		    li += '<li><a href = "#montre/'+listeMontre[indiceMontre].id+'">'+ listeMontre[indiceMontre].nom+ '</a></li>';
-		    // +listeCadeau[indiceCadeau].marque+ " " +listeCadeau[indiceCadeau].description+"</li>";
 		}
 		htmlListeMontre.html(li);
 	}
