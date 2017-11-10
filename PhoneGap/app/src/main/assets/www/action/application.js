@@ -28,7 +28,7 @@ var applicationListeCollection =
         else if (ancre.match(/^#ajouterMontreVue:nouvelleMontre/))
         {
             var montre = this.ajouterMontreVue.montre;
-            this.cadeauDAO.ajouterMontre(montre);
+            this.montreDAO.ajouterMontre(montre);
             window.location.hash = "#";
         }
 

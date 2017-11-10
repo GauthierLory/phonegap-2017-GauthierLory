@@ -6,13 +6,7 @@ var ListeMontreVue = function()
 		$("body").html(ListeMontreVue.pageListeMontre);
 
 		var htmlListeMontre = $("#liste-montre");
-
 		var li = "";
-
-		var montreDAO = new MontreDAO();
-
-		var listeMontre = montreDAO.getListeMontre();
-
 		for (var indiceMontre in listeMontre)
 		{
 		    li += '<li><a href = "#montre/'+listeMontre[indiceMontre].id+'">'+ listeMontre[indiceMontre].nom+ '</a></li>';

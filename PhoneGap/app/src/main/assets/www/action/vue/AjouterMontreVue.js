@@ -12,16 +12,15 @@ var AjouterMontreVue = function()
        	{
        		evenement.preventDefault();
        		var nom = $("#nom").val();
-       		var nom = $("#marque").val();
-       		var nom = $("#description").val();
-       		var nom = $("#taille").val();
-       		var nom = $("#reference").val();
-       		var nom = $("#prix").val();
+       		var marque = $("#marque").val();
+       		var description = $("#description").val();
+       		var taille = $("#taille").val();
+       		var reference = $("#reference").val();
+       		var prix = $("#prix").val();
 
        		instance.montre = new Montre(nom ,marque, description,taille,reference,prix)
        		window.location.hash = "#AjouterMontreVue:NouvelleMontre";
        	} );
-
    }
 }
 

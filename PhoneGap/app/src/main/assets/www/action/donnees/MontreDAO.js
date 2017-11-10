@@ -5,6 +5,7 @@ var MontreDAO = function()
     var montre3 = new Montre(3,"Calibre 381","JAEGER-LECOULTRE","Montre automatique","42MM","6042422","39 000 euros");
     var montre4 = new Montre(4,"Oyster Perpetual Datejust II","ROLEX","Montre automatique","41MM","116333-72213","11 000 euros");
 
+    listeMontre = [montre1,montre2,montre3,montre4];
    /* listeMontre = [
         {"id" :1, "nom" : "Royal Oak Nautilus","marque" : "PATEK PHILIPPE", "description" : "Montre automatique" , "taille" : "40MM" , "reference" : "ref : 5711/1A" , "prix" : "32 800 euros"},
 
@@ -29,12 +30,11 @@ var MontreDAO = function()
             montre = listeMontre[indiceMontre];
             if (montre.id > maximum)
                 maximum = montre.id;
-            //if (cadeau.id == id) return cadeau;
         }
         return maximum + 1;
     }
 
-    this.ajouterMontre = function()
+    this.ajouterMontre = function(montre)
     {
         montre.id = trouverNouvelId();
         listeMontre.push(montre);
