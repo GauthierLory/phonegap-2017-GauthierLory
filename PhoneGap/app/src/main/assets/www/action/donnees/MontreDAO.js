@@ -17,12 +17,12 @@ var MontreDAO = function()
     ];
     */
 
-    this.getListeMontre = function()
+  this.getListeMontre = function()
     {
         return listeMontre;
     }
 
-   trouverNouvelId = function ()
+    trouverNouvelId = function ()
     {
         maximum = 0;
         for (var indiceMontre in listeMontre)
@@ -33,8 +33,7 @@ var MontreDAO = function()
         }
         return maximum + 1;
     }
-
-    this.ajouterMontre = function(montre)
+    this.ajouterMontre = function (montre)
     {
         montre.id = trouverNouvelId();
         listeMontre.push(montre);
@@ -42,10 +41,10 @@ var MontreDAO = function()
 
     this.getMontreParId = function (id)
     {
-		for (var indiceMontre in listeMontre)
-		{
-		    montre = listeMontre[indiceMontre];
-		    if(montre.id == id ) return montre;
-		}
+        for (var indiceMontre in listeMontre)
+        {
+            montre = listeMontre[indiceMontre];
+            if (montre.id == id) return montre;
+        }
     }
 }
