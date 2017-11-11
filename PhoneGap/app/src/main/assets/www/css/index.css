@@ -17,7 +17,7 @@ p, h2,a {
   list-style-position: inside;
 }
 
-#page-ajouter-montre
+#formulaire-ajouter
 {
   margin: 50px;
   margin-left : 600px;
@@ -25,6 +25,51 @@ p, h2,a {
   text-align: center;
 }
 
+.btn {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 3px #1f1a1f;
+  -moz-box-shadow: 0px 1px 3px #1f1a1f;
+  box-shadow: 0px 1px 3px #1f1a1f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 19px;
+  background: #0e9912;
+  padding: 5px 10px 5px 10px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  text-align: justify;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.annuler {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 3px #1f1a1f;
+  -moz-box-shadow: 0px 1px 3px #1f1a1f;
+  box-shadow: 0px 1px 3px #1f1a1f;
+  font-family: Georgia;
+  color: #edd8ed;
+  font-size: px;
+  border-color: #1f628d;
+  border-style: solid;
+  border-width: ;
+  background: #cc1a23;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+
+.annuler:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
 
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -77,6 +122,15 @@ body {
         padding:75px 0px 75px 170px;
         margin:-90px 0px 0px -198px;
     }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
 }
 
 .event {
