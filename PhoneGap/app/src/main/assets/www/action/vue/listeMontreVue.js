@@ -1,4 +1,4 @@
-var ListeMontreVue = function (listeMontre) 
+var ListeMontreVue = function (listeMontre)
 {
     this.afficher = function()
     {
@@ -7,10 +7,10 @@ var ListeMontreVue = function (listeMontre)
 
         var htmlListeMontre = $("#liste-montre");
         var li = "";
-        for (var indiceMontre in listeMontre) 
+        for (var indiceMontre in listeMontre)
         {
-            li += '<li><a href="#montre/' + listeMontre[indiceMontre].id +'">' + listeMontre[indiceMontre].nom + '</a></li>';
-            
+            li += '<li class="list-group-item"><a href="#montre/' + listeMontre[indiceMontre].id +'">' + listeMontre[indiceMontre].nom + '</a></li>';
+
         }
         htmlListeMontre.html(li);
     }
