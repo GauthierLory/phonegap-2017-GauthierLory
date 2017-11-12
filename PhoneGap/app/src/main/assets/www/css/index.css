@@ -74,7 +74,13 @@ a:hover
   text-decoration: none;
 }
 
-* {
+fieldset
+{
+  background-color:#CCC;
+}
+
+*
+{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 

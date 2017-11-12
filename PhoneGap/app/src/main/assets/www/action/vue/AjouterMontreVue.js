@@ -8,7 +8,7 @@ var AjouterMontreVue = function ()
 
         $("body").html(AjouterMontreVue.pageAjouterMontre);
 
-        $("#formulaire-ajouter").on("submit", function (evenement) 
+        $("#formulaire-ajouter").on("submit", function (evenement)
         {
             evenement.preventDefault();
             var nom = $("#nom").val();
