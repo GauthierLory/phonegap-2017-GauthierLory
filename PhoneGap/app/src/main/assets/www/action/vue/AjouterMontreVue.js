@@ -18,7 +18,7 @@ var AjouterMontreVue = function ()
             var reference = $("#reference").val();
             var prix = $("#prix").val();
 
-              instance.montre = new Montre(nom, marque, description, taille,reference,prix)
+              instance.montre = new Montre(nom, marque, description, taille, reference, prix)
             window.location.hash = "#AjouterMontreVue:NouveauMontre";
         });
     }

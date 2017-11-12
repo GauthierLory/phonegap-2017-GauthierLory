@@ -76,7 +76,7 @@ a:hover
 
 fieldset
 {
-  background-color:#CCC;
+  border-style: none;
 }
 
 *
