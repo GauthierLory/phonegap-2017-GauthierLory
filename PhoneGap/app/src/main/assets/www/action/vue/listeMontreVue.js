@@ -9,7 +9,7 @@ var ListeMontreVue = function (listeMontre)
         var li = "";
         for (var indiceMontre in listeMontre)
         {
-            li += '<li class="list-group-item"><a href="#montre/' + listeMontre[indiceMontre].id +'">' + listeMontre[indiceMontre].nom + '</a></li>';
+            li += '<li class="list-group-item-active"><a href="#montre/' + listeMontre[indiceMontre].id +'">' + listeMontre[indiceMontre].nom + '</a></li>';
 
         }
         htmlListeMontre.html(li);

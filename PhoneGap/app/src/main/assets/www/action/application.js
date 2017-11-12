@@ -1,4 +1,4 @@
-var applicationListeCollection = 
+var applicationListeCollection =
 {
     montreDAO: new MontreDAO(),
     ajouterMontreVue: new AjouterMontreVue(),
@@ -25,7 +25,7 @@ var applicationListeCollection =
             this.ajouterMontreVue.afficher();
         }
 
-        else if (ancre.match(/^#AjouterMontreVue:NouveauMontre/)) 
+        else if (ancre.match(/^#AjouterMontreVue:NouveauMontre/))
         {
             var montre = this.ajouterMontreVue.montre;
             this.montreDAO.ajouterMontre(montre);
