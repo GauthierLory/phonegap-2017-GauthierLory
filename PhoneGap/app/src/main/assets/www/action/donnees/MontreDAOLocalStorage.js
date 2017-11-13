@@ -64,5 +64,19 @@ var MontreDAOLocalStorage = function()
         }
     }
 
+    this.modifierMontre = function(montreModifier)
+    {
+        for (var indiceMontre in listeMontre)
+        {
+            montre = listeMontre[indiceMontre];
+            if(montre.id == montreModifier.id)
+            {
+                listeMontre[indiceMontre] = montreModifier;
+                return;
+       			localStorage['montre'] = JSON.stringify(listeMontre);
+            }
+        }
+    }
+
 initialiser();
 }

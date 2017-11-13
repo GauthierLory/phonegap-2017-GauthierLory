@@ -25,6 +25,13 @@ var applicationListeCollection =
             this.ajouterMontreVue.afficher();
         }
 
+        else if (ancre.match(/^#ModifierMontreVue:NouveauMontre/))
+        {
+            var montre = this.modifierMontreVue.montre;
+            this.montreDAO.modifierMontre(montre);
+            window.location.hash = "#";
+        }
+
         else if (ancre.match(/^#AjouterMontreVue:NouveauMontre/))
         {
             var montre = this.ajouterMontreVue.montre;

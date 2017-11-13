@@ -27,7 +27,49 @@
             <p id="montre-taille"></p>
             <p id="montre-reference"></p>
             <p id="montre-prix"></p>
+            <a class ="modifier-montre" href="#modifier-montre"> Modifier une montre </a>
         </script>
+
+        <script id="page-modifier-montre" type="text/plain">
+            <h1>Modifier une montre</h1>
+            <form id = "formulaire-modifier">
+                <fieldset>
+                    <legend>Identification de la montre</legend>
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" /></br>
+                    </div>
+                    <div>
+                        <label for="marque">Marque</label>
+                        <input type="text" name="marque" id="marque" /></br>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                     <legend>D&eacute;tails sur la montre</legend>
+                    <div>
+                        <label for="description">Description</label></br>
+                        <input type="text" name="description" id="description"></textarea>
+                    </div>
+                    <div>
+                        <label for="taille">Taille</label>
+                        <input type="text" name="taille" id="taille" />
+                    </div>
+                    <div>
+                        <label for="reference">Reference</label>
+                        <input type="text" name="reference" id="reference" />
+                    </div>
+                    <div>
+                        <label for="prix">Prix</label>
+                        <input type="text" name="prix" id="prix" />
+                    </div>
+                </fieldset>
+                <input class="btn" type="submit" value="Modifier la montre"/>
+                  </br>
+                  <a class="annuler" href="#">Annuler et revenir &agrave; la liste</a>
+            </form>
+        </script>
+
 
         <script id="page-ajouter-montre" type="text/plain">
             <h1>Ajouter une montre</h1>

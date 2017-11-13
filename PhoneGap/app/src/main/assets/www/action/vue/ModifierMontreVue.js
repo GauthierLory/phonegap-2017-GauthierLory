@@ -1,4 +1,4 @@
-var AjouterMontreVue = function ()
+var ModifierMontreVue = function ()
 {
     instance = this;
     this.montre = null;
@@ -6,9 +6,9 @@ var AjouterMontreVue = function ()
     {
         this.montre = null;
 
-        $("body").html(AjouterMontreVue.pageAjouterMontre);
+        $("body").html(ModifierMontreVue.pageModifierMontre);
 
-        $("#formulaire-ajouter").on("submit", function (evenement)
+        $("#formulaire-modifier").on("submit", function (evenement)
         {
             evenement.preventDefault();
             var nom = $("#nom").val();
@@ -19,8 +19,8 @@ var AjouterMontreVue = function ()
             var prix = $("#prix").val();
 
               instance.montre = new Montre(nom, marque, description, taille, reference,prix)
-            window.location.hash = "#AjouterMontreVue:NouveauMontre";
+            window.location.hash = "#ModifierMontreVue:NouveauMontre";
         });
     }
 }
-AjouterMontreVue.pageAjouterMontre = $("#page-ajouter-montre").html();
+ModifierMontreVue.pageModifierMontre = $("#page-modifier-montre").html();

@@ -37,4 +37,19 @@ var MontreDAO = function()
             if (montre.id == id) return montre;
         }
     }
+
+    this.modifierMontre = function(montreModifier)
+    {
+        for (var indiceMontre in listeMontre)
+        {
+            montre = listeMontre[indiceMontre];
+            if(montre.id == montreModifier.id)
+            {
+                listeMontre[indiceMontre] = montreModifier;
+                return;
+            }
+        }
+    }
+
+
 }
