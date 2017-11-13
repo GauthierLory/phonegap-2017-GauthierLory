@@ -1,6 +1,6 @@
 var applicationListeCollection =
 {
-    montreDAO: new MontreDAO(),
+    montreDAO: new MontreDAOLocalStorage(),
     ajouterMontreVue: new AjouterMontreVue(),
     lancer: function ()
     {
