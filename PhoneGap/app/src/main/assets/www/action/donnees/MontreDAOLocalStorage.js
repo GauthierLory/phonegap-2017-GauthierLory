@@ -5,7 +5,7 @@ var MontreDAOLocalStorage = function()
     var montre3 = new Montre("Calibre 381","JAEGER-LECOULTRE","Montre automatique","42MM","6042422","39 000 euros",3);
     var montre4 = new Montre("Oyster Perpetual Datejust II","ROLEX","Montre automatique","41MM","116333-72213","11 000 euros",4);
 
-    listeMontre = [montre1,montre2,montre3,montre4];
+    listeMontre = null;
 
 	    initialiser = function ()
 	    {

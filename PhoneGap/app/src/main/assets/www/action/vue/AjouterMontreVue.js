@@ -10,7 +10,7 @@ var AjouterMontreVue = function ()
 
         $("#formulaire-ajouter").on("submit", function (evenement)
         {
-            evenement.preventDefault();
+            evenement.preventDefault(1);
             var nom = $("#nom").val();
             var marque = $("#marque").val();
             var description = $("#description").val();
