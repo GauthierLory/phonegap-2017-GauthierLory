@@ -74,6 +74,7 @@ fieldset
   max-height: 20%;
   margin: auto;
   display: block;
+  opacity: 
 }
 
 
@@ -105,8 +106,8 @@ margin: 17px;}
    vertical-align: middle;
 
      max-width: 20%;
-  max-height: 20%;
-  margin: auto;
+  max-height: 20%
+;  margin: auto;
   display: block;
    }
 .ajouter-montre:hover {
@@ -118,3 +119,11 @@ margin: 17px;}
    border-top-color: #1b435e;
    background: #1b435e;
    }
+
+body
+{
+  background-image: url(wooden1.jpg);
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size : cover;
+}
