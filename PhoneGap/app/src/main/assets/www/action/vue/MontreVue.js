@@ -10,6 +10,8 @@ var MontreVue = function(montre)
 		$("#montre-taille").html(montre.taille);
 		$("#montre-reference").html(montre.reference);
 		$("#montre-prix").html(montre.prix);
+		li += '<li><a href="#montre/' + listeMontre[indiceMontre].id +'">' + listeMontre[indiceMontre].nom + '</a></li>';
+
 	}
 }
 

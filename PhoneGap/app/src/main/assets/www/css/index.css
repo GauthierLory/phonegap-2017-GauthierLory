@@ -7,7 +7,8 @@ h1 {
     text-align:center;
 
 }
-p, h2,a {
+p, h2,a 
+{
   text-align: center;
 }
 
@@ -15,9 +16,11 @@ p, h2,a {
 #formulaire-ajouter
 {
 
-  text-align: center;
-  border-width: 0px 0px 0px 0px;
+ display: block;
+ text-align: center;
+
 }
+
 
 .btn {
   -webkit-border-radius: 15;
@@ -58,18 +61,6 @@ p, h2,a {
   text-decoration: none;
 }
 
-a {
-  text-decoration: underline;
-  color: #a00;
-}
-a:visited {
-  color: #844;
-}
-a:hover, a:focus, a:active {
-  text-decoration: none;
-  color: white;
-  background: #800;
-}
 
 
 .annuler:hover {
@@ -79,10 +70,11 @@ a:hover, a:focus, a:active {
 
 fieldset
 {
-  border-style: none;
+  max-width: 20%;
+  max-height: 20%;
+  margin: auto;
+  display: block;
 }
-
-
 
 
 ul 
@@ -95,3 +87,34 @@ text-align: center;
 
 li {padding: 16px;
 margin: 17px;}
+
+
+.ajouter-montre{
+
+   border-top: 1px solid #96d1f8;
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   border-radius: 8px;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+     max-width: 20%;
+  max-height: 20%;
+  margin: auto;
+  display: block;
+   }
+.ajouter-montre:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.ajouter-montre:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
