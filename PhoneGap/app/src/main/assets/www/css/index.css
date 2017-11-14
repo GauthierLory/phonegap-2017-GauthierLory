@@ -12,6 +12,15 @@ p, h2,a
   text-align: center;
 }
 
+a:active
+{
+  background-color: white;
+}
+
+a:hover
+{
+  background-color: yellow;
+}
 
 #formulaire-ajouter
 {
@@ -139,7 +148,4 @@ margin: 17px;}
 body
 {
   background-image: url(wooden1.jpg);
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-size : cover;
 }

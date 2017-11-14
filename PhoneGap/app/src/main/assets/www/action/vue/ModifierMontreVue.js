@@ -45,7 +45,7 @@ var ModifierMontreVue = function (montre)
                 instance.montreModifier.prix = prix;
 
                  
-                window.location.hash = "#ModifierMontreVue:NouveauMontre";
+                window.location.hash = "#ModifierMontreVue:ModifierMontre";
             });
     }
 }
