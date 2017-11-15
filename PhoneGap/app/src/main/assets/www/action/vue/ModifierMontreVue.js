@@ -1,7 +1,7 @@
 var ModifierMontreVue = function (montre)
 {
     instance = this;
-    this.montreModifie = montre;
+    this.montreModifier = montre;
 
     this.afficher = function ()
     {
@@ -12,7 +12,7 @@ var ModifierMontreVue = function (montre)
         $("#nom").html(montreNom);
 
         var montreMarque = '<label for="marque">marque</mark></label><input type="text" name="marque" id="marque" value ="'+  montre.marque +'"/>';
-        $("#marque").html(montreCouleur);
+        $("#marque").html(montreMarque);
 
         var montreDescription = '<label for="description">Description</label><textarea name="description" id="description" value ="'+ montre.description +'"/>';
         $("#description").html(montreDescription);
@@ -33,18 +33,23 @@ var ModifierMontreVue = function (montre)
                 evenement.preventDefault();
                 var nom = $("#nom").val();
                 instance.montreModifier.nom = nom;
+
                 var marque = $("#marque").val();
                 instance.montreModifier.marque= marque;
+
                 var description = $("#description").val();
                 instance.montreModifier.description = description;
+
                 var taille = $("#taille").val();
                 instance.montreModifier.taille = taille;
+
                 var reference = $("#reference").val();
-                instance.montreModifier.reference = re;
+                instance.montreModifier.reference = reference;
+
                 var prix = $("#prix").val();
                 instance.montreModifier.prix = prix;
 
-                 
+
                 window.location.hash = "#ModifierMontreVue:ModifierMontre";
             });
     }
