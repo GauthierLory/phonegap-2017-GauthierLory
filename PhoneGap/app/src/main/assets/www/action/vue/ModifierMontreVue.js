@@ -1,7 +1,7 @@
 var ModifierMontreVue = function (montre)
 {
     instance = this;
-    this.montreModifie = montre;
+    this.montreModifier = montre;
 
     this.afficher = function ()
     {
@@ -33,14 +33,19 @@ var ModifierMontreVue = function (montre)
                 evenement.preventDefault();
                 var nom = $("#nom").val();
                 instance.montreModifier.nom = nom;
+
                 var marque = $("#marque").val();
                 instance.montreModifier.marque= marque;
+
                 var description = $("#description").val();
                 instance.montreModifier.description = description;
+
                 var taille = $("#taille").val();
                 instance.montreModifier.taille = taille;
+
                 var reference = $("#reference").val();
-                instance.montreModifier.reference = re;
+                instance.montreModifier.reference = reference;
+
                 var prix = $("#prix").val();
                 instance.montreModifier.prix = prix;
 
