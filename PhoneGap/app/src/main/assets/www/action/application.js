@@ -25,19 +25,28 @@ var applicationListeCollection =
             this.ajouterMontreVue.afficher();
         }
 
-        else if (ancre.match(/^#ModifierMontreVue:NouveauMontre/))
-        {
-            var montre = this.modifierMontreVue.montre;
-            this.montreDAO.modifierMontre(montre);
-            window.location.hash = "#";
-        }
-
         else if (ancre.match(/^#AjouterMontreVue:NouveauMontre/))
         {
             var montre = this.ajouterMontreVue.montre;
             this.montreDAO.ajouterMontre(montre);
             window.location.hash = "#";
         }
+
+        else if(ancre.match(/^#modifier-montre\/([0-9]+)/)){
+                var trouvaille = ancre.match(/^#modifier-montre\/([0-9]+)/);
+                var id = trouvaille[1];
+                var montre = this.montreDAO.getMontreParId(id);
+                this.modifierMontreVue= new ModifierMontreVue(montre);
+                this.modifierMontreVue.afficher();
+         }
+         else if (ancre.match(/^#modifierMontreVue:ModifierMontre/))
+         {
+            var montre = this.modifierMontreVue.montreModifie;
+            this.montreDAO.modifierMontre(montre);
+            this.modifierMontreVue = null;
+            window.location.hash = "#";
+
+         }
 
         else
         {

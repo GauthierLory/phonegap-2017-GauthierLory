@@ -12,6 +12,15 @@ p, h2,a
   text-align: center;
 }
 
+a:active
+{
+  background-color: white;
+}
+
+a:hover
+{
+  background-color: yellow;
+}
 
 #formulaire-ajouter
 {
@@ -19,6 +28,22 @@ p, h2,a
  display: block;
  text-align: center;
 
+}
+
+.btnModif{
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 3px #1f1a1f;
+  -moz-box-shadow: 0px 1px 3px #1f1a1f;
+  box-shadow: 0px 1px 3px #1f1a1f;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 14px;
+  background: #0e9912;
+  padding: 5px 10px 5px 10px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
 }
 
 
@@ -74,7 +99,7 @@ fieldset
   max-height: 20%;
   margin: auto;
   display: block;
-  opacity: 
+  opacity: 1;
 }
 
 
@@ -123,7 +148,4 @@ margin: 17px;}
 body
 {
   background-image: url(wooden1.jpg);
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-size : cover;
 }
